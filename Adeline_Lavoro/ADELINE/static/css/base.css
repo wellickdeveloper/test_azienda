@@ -1,0 +1,153 @@
+
+
+html {
+  scroll-behavior:smooth;
+}
+
+
+
+
+.navbar-brand { margin-left: 170px;}
+
+.navbar-brand i {
+    color: white; font-size:40px;
+}
+.navbar-brand span {font-size: 22px; letter-spacing: 3px; font-family: Oswald; color:white;}
+
+.navbar-nav {margin-right: 170px;}
+.nav-item {margin-right: 15px;}
+.nav-item .nav-link {
+    color:white !important; font-family: Lato; font-size: 15px; text-transform: uppercase; letter-spacing: 1px;
+}
+
+.nav-item .nav-link span:hover {border-bottom: 1px solid LightGrey; padding-bottom: 10px;}
+
+
+.dropdown-menu {background-color: transparent;}
+.dropdown-menu .dropdown-item {
+    text-transform: uppercase; letter-spacing: 1px; font-size:13px; font-family: Lato;
+    color:white;
+}
+
+
+/* SCROLLED ELEMENT AND COLOR OF MENU WITH TRANSITION AND JQUERY CORRECT MODE*/
+
+
+.bg-light {background-color: transparent !important; transition: 750ms ease;}
+    .bg-light.bg-darkness { background-color: rgb(65,65,65)!important;}
+
+.navbar-padding {padding-top: 45px; transition: 750ms ease;}
+    .navbar-padding.navbar-padding-scroll { padding-top: 20px;}
+
+
+
+
+    /* SEZIONE BANNER TELEFONO */
+
+
+    .sezione_banner_telefono .jumbotron {
+        background-color: WhiteSmoke; border-radius: 0;
+    }
+
+    .sezione_banner_telefono .jumbotron p {font-size:24px; font-family: Oswald; letter-spacing: 2px;}
+
+
+
+
+    /* SEZIONE ULTIMI ARTICOLI BLOG */
+
+
+    .sezione_blog .container-fluid {
+        background-position: center center; background-size: cover; background-attachment: fixed;
+    }
+
+    .sezione_blog .container-fluid h2 {
+        text-transform: uppercase; font-family: Oswald; letter-spacing: 2px; font-size:22px;
+    }
+
+    .sezione_blog button {
+        font-family: Oswald; border:2px solid white; letter-spacing: 3px;
+    }
+
+
+    .sezione_blog .card {border:0px;}
+
+    .sezione_blog .card-title { font-family: Oswald; letter-spacing: 2px; font-size:25px;}
+
+
+
+
+
+
+/* sezione finale delle pagine */
+
+.banner_contatto .jumbotron {
+    background-color: white; border-radius: 0; margin-bottom: 0px; padding-bottom: 50px !important;
+}
+
+.banner_contatto .jumbotron p {font-size:24px; font-family: Oswald; letter-spacing: 2px;}
+
+
+
+
+
+
+
+
+.footer_2 .jumbotron {margin-bottom: 0px; border-radius: 0; }
+
+.footer_2 .jumbotron p {font-family: Oswald; letter-spacing: 1px; color:WhiteSmoke; font-size:14px; margin-left: -20px;}
+
+.footer_2 .jumbotron i {font-size: 35px; color:white; transition:1s;}
+
+.footer_2 .jumbotron i:hover {color:rgb(250,170,0);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERY FOR MOBILE DEVICE */
+
+@media (min-width: 281px) and (max-width: 767px) {
+
+    body {overflow-x: hidden;}
+
+    .navbar-toggler {margin-right:0;}
+    .navbar-brand { margin-left: 0px;}
+
+    .navbar-brand i {
+        color: white; font-size:30px;
+    }
+    .navbar-brand span {font-size: 16px; letter-spacing: 3px; font-family: Oswald; color:white;}
+
+
+
+
+
+    .navbar-nav {margin-right: 0px; margin-top: 15px;}
+    .nav-item {margin-right: 15px;}
+    .nav-item .nav-link {
+        color:white !important; font-family: Lato; font-size: 15px; text-transform: uppercase; letter-spacing: 1px;
+    }
+
+    .nav-item .nav-link span:hover {border-bottom: 1px solid LightGrey; padding-bottom: 10px;}
+
+
+
+    .dropdown-menu .dropdown-item {text-transform: uppercase; letter-spacing: 1px; font-size:13px; font-family: Lato;}
+
+
+    .bg-light {background-color: black !important;}
+
+    .navbar-padding {padding-bottom: 20px;}
+
+}

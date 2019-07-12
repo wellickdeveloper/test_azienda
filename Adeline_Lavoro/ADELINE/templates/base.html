@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+
+
+    <!-- ICONE -->
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    {% block extrahead %} {% endblock %} <!-- css per le altre pagine -->
+
+
+    <title> {% block title %} {% endblock %} </title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+
+</head>
+<body>
+
+
+    <section class="header">
+        <nav id="menu" class="navbar navbar-dark navbar-expand-xl fixed-top bg-light navbar-padding">
+            <a class="navbar-brand" href="#">
+                <i class='fa fa-buysellads d-inline-block align-top' id="stemma"></i>
+                <span id="stemma_scritta">DELINE WEB DEVELOPMENT</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/"><span>Home</span> <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span>Services</span>
+                        </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#"> web design </a>
+
+                                <a class="dropdown-item" href="#"> web development </a>
+
+                                <a class="dropdown-item" href="#"> digital strategy </a>
+
+                                <a class="dropdown-item" href="#"> hosting </a>
+                            </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about_us/"> <span>About us</span> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog/"> <span>Blog</span> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> <span>Contacts</span> </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+
+    {% block homepage %}
+    {% endblock %}
+
+
+    {% block blog%}
+    {% endblock %}
+
+    {% block articoli_page %}
+    {% endblock %}
+
+
+    {% block about_us %}
+    {% endblock %}
+
+
+
+    <section class="sezione_banner_telefono">
+        <div class="jumbotron">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-md-6">
+                        <p>Contattaci per un preventivo gratuito al numero: 034 435-456</p>
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn" style="background-color:rgba(0,50, 100, 0.5); font-family:Lato; color:white;">
+                            CONTATTACI
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="sezione_blog">
+        <div class="container-fluid text-center">
+            <br><br><br>
+            <h2> Our latest articles from our programming blog </h2> <br><br>
+            <div class="row justify-content-between">
+                <div class="col-md-9 mx-auto">
+                    <div class="card-group">
+                        {% for blog_post in articoli %}
+                            <div class="card ml-3 mr-3">
+                                <img class="card-img-top" src="{{blog_post.image.url}}" style="height:38vh; width:100%;"> <br>
+                                <div class="card-body text-left" style="margin-left:-15px;">
+                                    {{blog_post.data}} <br><br>
+                                    <h5 class="card-title text-left">{{blog_post.title}}</h5>
+                                    <p class="card-text text-left">{{blog_post.content|safe|truncatewords:"30"|linebreaks}}</p>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-md">
+                                            <a class="btn btn-primary" href="{{blog_post.get_absolute_url}}">read more..</a> <br><br>
+                                        </div>
+                                        <div class="col-md">
+                                            <p style="margin-top:10px;">Autore: <b>{{blog_post.autore}}</b> </p>
+                                        </div>
+                                    </div>
+                    <!-- ********MESSAGGIO IMPORTANTE*********
+                            DURANTE IL ROUTING DEI POST DEL BLOG O ANCHE PER ALTRE SITUAZIONI
+                            RICORDARSI SEMPRE DI INSERIRE NELL HREF DEL TAG A IL SIMBOLO '/'
+                            PRIMA DELLE PAGINE ALTRIMENTI DARA SEMPRE ERRORE PERCHE NON PARTIRA
+                            DALL INIZIO MA SOMMERA L'URL AGLI ALTRI URL
+                    -->
+                                </div>
+                            </div>
+
+
+                            {% if forloop.counter|divisibleby:"2"  %}
+                            <!-- CHIUSURA E RIAPERTURA DEL CARD GROUP -->
+                            </div> <br><br>
+
+                            <div class="card-group">
+
+                            {% endif %}
+                        {%endfor%}
+
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--<iframe id="mappa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.7576724211895!2d9.147542515520835!3d45.474683579101075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c1719cd0d495%3A0x103b30d0402fb04!2sVia+Monte+Rosa%2C+Milano+MI!5e0!3m2!1sit!2sit!4v1562076876592!5m2!1sit!2sit"  height="200" frameborder="0" style="border:0; width:100%;" allowfullscreen></iframe>-->
+
+
+
+    <section class="sezione_finale_del_sito">
+
+        <div class="footer_2">
+            <div class="jumbotron bg-dark">
+                <div class="container">
+                    <br>
+                    <h1 class="text-center text-light">Let's Get In Touch!</h1>
+                    <p class="text-center text-light">
+                        Ready to start your next project with us? Give us a call or send us an
+                        email and we will get back to you as soon as possible!
+                    </p>
+                    <div class="row">
+                        <div class="col-md">
+                            Photo by Alesia Kazantceva on Unsplash
+                            <a href=https://it.pngtree.com target="_blank">Grafica da pngtree.com</a>
+                            <p class="text-light">Photo by Hunters Race on Unsplash</p>
+                            Image by <a href="https://pixabay.com/users/Free-Photos-242387/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1245776">Free-Photos</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1245776">Pixabay</a>
+                            Foto di <a href="https://pixabay.com/it/users/rawpixel-4283981/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2449726">rawpixel</a> da <a href="https://pixabay.com/it/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2449726">Pixabay</a>
+                        </div>
+                        <div class="col-md">
+                            <div class="float-right" onclick="topFunction()" id="myBtn">
+                                <i class='fas fa-arrow-up'></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Copyright 2018 AdelineWebDevelopment</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <script>
+        $(window).scroll(function(){
+
+            $('.bg-light').toggleClass('bg-darkness', $(this).scrollTop() > 200);
+            $('.navbar-padding').toggleClass('navbar-padding-scroll', $(this).scrollTop() > 200);
+        });
+    </script>
+
+
+    <script>
+    // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+
+
+
+
+</body>
+</html>

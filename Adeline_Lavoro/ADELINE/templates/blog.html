@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+
+
+
+
+{% load static %}
+{% block extrahead %}
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+
+{% endblock %}
+
+
+{% block blog %}
+
+
+
+
+
+<br><br><br>
+
+<br><br><br><br><br>
+<div class="container">
+    <h2 style="font-family:Oswald; letter-spacing:3px; text-align:center;">
+        <span style=" border-bottom:2px solid rgb(250,170,0)">LATEST BLOG POST</span>
+    </h2>
+</div>
+<br><br>
+
+
+
+
+<div class="container-fluid p-5">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card-group">
+                {% for blog_post in post_assoluti%}
+                    <div class="card ml-2 mr-2 text-dark" style="border:0px;">
+                        <img class="card-img-top" src="{{blog_post.image.url}}" style="height:260px; width:100%;"> <br>
+                        <div class="card-body">
+                            <h3 class="card-title" style="text-transform:uppercase; font-family:Oswald;">{{blog_post.title}}</h3>
+                            <p> Posted on {{blog_post.data}} by <b>{{ blog_post.autore}}</b> </p>
+                            <p class="card-text" style="font-family:Oswald;">{{blog_post.content|safe|truncatewords:"30"|linebreaks}}</p>
+                            <a style="color:rgb(250,170,0); font-family:Oswald; letter-spacing:2px;" href="{{blog_post.get_absolute_url}}">
+                                read more..
+                            </a> <br><br>
+                        </div>
+
+                    </div>
+
+
+                        {% if forloop.counter|divisibleby:"3"  %}
+                        <!-- CHIUSURA E RIAPERTURA DEL CARD GROUP -->
+                        </div> <br><br>
+
+                        <div class="card-group">
+                    {% endif %}
+            {%endfor%}
+                        </div>
+
+
+        </div>
+    </div>
+
+
+
+
+    <br><br>
+    <div class="container-fluid p-5">
+        <div class="pagination">
+            <span class="step-links">
+                {% if post_assoluti.has_previous %}
+                    <a class="btn btn-primary" href="?page=1">&laquo; first</a>
+                    <a class="btn btn-primary" href="?page={{ post_assoluti.previous_page_number }}">previous</a>
+                {% endif %}
+
+        <span class="current">
+            Page <u style="color:red;">{{ post_assoluti.number }}</u> of {{ post_assoluti.paginator.num_pages }}.
+        </span>
+
+        {% if post_assoluti.has_next %}
+            <a class="btn btn-primary" href="?page={{ post_assoluti.next_page_number }}">next</a>
+            <a class="btn btn-primary" href="?page={{ post_assoluti.paginator.num_pages }}">last &raquo;</a>
+        {% endif %}
+            </span>
+        </div>
+
+    </div>
+
+</div>
+
+
+<br><br><br>
+
+{% endblock %}

@@ -1,0 +1,41 @@
+
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+{% block about_us %}
+
+
+<br><br><br>
+<div class="container-fluid p-0">
+    <img src="{% static 'images/about_us_image.jpg'%}" style="width:100%; height:570px;">
+</div>
+<div class="container p-5">
+    <h2 style="font-family:Oswald; letter-spacing:3px;"> ABOUT US</h2> <br><br>
+    <p style="line-height:30px; font-family:Lato;">
+        Adeline nasce dal unione di diversi programmatori e designer con
+        background-tecnici diversi. <br>
+        Caratteristica principale della rete Web è che i nodi che la compongono sono tra loro collegati tramite i
+        cosiddetti link (collegamenti ipertestuali), formando un enorme ipertesto, e i suoi servizi possono essere
+        resi disponibili dagli stessi utenti di Internet.
+        <br><br>
+        Per quanto riguarda i contenuti, quindi, il Web possiede la straordinaria peculiarità di offrire a chiunque
+        la possibilità di diventare editore e, con una spesa esigua, di raggiungere un pubblico potenzialmente vastissimo
+        distribuito in tutto il mondo: gli utenti di Internet nel 2008 hanno superato il miliardo e cinquecento milioni,
+        quasi un quarto della popolazione mondiale. <br><br>
+        Il Web è stato inizialmente implementato da Tim Berners-Lee mentre era ricercatore al CERN,
+        sulla base di sue idee e di un suo collega, Robert Cailliau, e gli standard su cui è basato,
+        in continua evoluzione, sono mantenuti dal World Wide Web Consortium (W3C: www.w3c.org).
+        <br><br>
+        Il Web è uno spazio elettronico e digitale di Internet destinato alla pubblicazione di contenuti
+        multimediali (testi, immagini, audio, video, ipertesti, ipermedia, ecc.) nonché uno strumento per
+        implementare particolari servizi come ad esempio il download di software (programmi, dati, applicazioni, videogiochi, ecc.).
+        Tale spazio elettronico e tali servizi sono resi disponibili attraverso particolari computer di Internet chiamati server web.
+    </p>
+</div>
+
+
+
+<br><br><br>
+{%endblock%}

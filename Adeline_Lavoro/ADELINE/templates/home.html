@@ -1,0 +1,285 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block extrahead %}
+    <link rel="stylesheet" href="{% static 'css/homepage.css' %}">
+
+{% endblock %}
+
+{% block title%}
+
+    Adeline | webdesign and development
+
+{% endblock %}
+
+
+{% block homepage %}
+
+<section class="cover-carosello">
+<!-- QUANDO SI UTILIZZANO I COMPONENTI BOOTSTRAP CONTROLLARE LA FOTTUTISSIMA VERSIONE DEI PRODOTTI
+CAROSELLO BOOTSTRAP 4 NON 3 ALTRIMENTI NON FUNZIONA UN CAZZZOOOOOO -->
+<div id="slider_service" class="carousel slide carousel-fade" data-ride="carousel" data-interval="7000" data-pause="false">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+        <li data-target="#slider_service" data-slide-to="0" class="active"></li>
+        <li data-target="#slider_service" data-slide-to="1"></li>
+        <li data-target="#slider_service" data-slide-to="2"></li>
+    </ul>
+
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+        <div class="carousel-item active zoomIn" style="background-image:url({% static 'images/team_di_lavoro.jpeg'%})" id="prima_slide">
+            <div class="carousel-caption bounceInUp">
+                <h1>Happy Clients. Great Results.</h1>
+                <p> Questa e la nostra filosofia, lavori professionali e rapporti di lunga durata con i clienti. </p>
+                <button class="btn float-left"> Scopri di piu! </button>
+            </div>
+        </div>
+        <div class="carousel-item zoomIn" style="background-image:url({% static 'images/design.jpg'%})" id="seconda_slide">
+            <div class="carousel-caption bounceInUp">
+                <h1>Design for all device and browser.</h1>
+                <p> I nostri siti sono responsible e innovativi, possiamo creare layout ad hoc per qualsiasi esigenza. </p>
+                <button class="btn float-left"> Scopri di piu! </button>
+            </div>
+        </div>
+        <div class="carousel-item zoomIn" style="background-image:url({% static 'images/development.jpg'%})" id="terza_slide">
+            <div class="carousel-caption bounceInUp">
+                <h1> Articoli su diversi linguaggi di programmazione. </h1>
+                <p> Visita il nostro blog per avere suggerimenti e spiegazioni su vari temi di programmazione. </p>
+                <button class="btn float-left"> Scopri di piu! </button>
+            </div>
+        </div>
+    </div>
+
+</div>
+</section>
+
+<br><br>
+<section class="about_us">
+        <br>
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-md-7">
+
+                    <h2> Efficenza, precisione e innovazione.</h2>
+                    <p>
+                        Adeline è una realta nuova che punta a raggiungere obbiettivi importanti.
+                        Siamo un gruppo di programmatori che hanno deciso di unire le proprie competenze
+                        nello sviluppo web. <br>
+
+                    </p>
+                    <button class="btn" type="button" name="button"> Learn More</button>
+                </div>
+                <div class="col-md-5">
+                    <img src="{% static 'images/processo_di_sviluppo_3.png '%}" alt="" style="width:100%; height:80%;">
+                </div>
+            </div>
+        </div>
+
+</section>
+
+
+<hr>
+
+
+<section class='servizi'>
+    <div class="container p-4">
+        <h2>Our Digital Services</h2>
+        <p>
+            Noi siamo un team con background tecnici diversi, applichiamo le nostre conoscenze per i
+            tuoi business e produciamo dei prodotti molto efficenti.
+        </p>
+
+        <div class="row justify-content-between">
+            <div class="col-md-4">
+                    <i class='fas fa-palette'></i>
+                    <h5>Web Design</h5>
+                    <p>
+                        La realizzazione di un sito coinvolge diverse
+                        figure professionali che variano in base alla
+                        complessità del progetto: l'analista che raccoglie le
+                        richieste del cliente.
+                     </p>
+            </div>
+            <div class="col-md-4">
+                    <i class='fas fa-code'></i>
+                    <h5>Web Development</h5>
+                    <p>
+                        La realizzazione di un sito coinvolge diverse
+                        figure professionali che variano in base alla
+                        complessità del progetto: l'analista che raccoglie le
+                        richieste del cliente.
+                     </p>
+            </div>
+            <div class="col-md-4">
+                    <i class='fas fa-users'></i>
+                    <h5>Digital Strategy</h5>
+                    <p>
+                        La realizzazione di un sito coinvolge diverse
+                        figure professionali che variano in base alla
+                        complessità del progetto: l'analista che raccoglie le
+                        richieste del cliente.
+                     </p>
+            </div>
+
+
+
+            <div class="col-md-4">
+                    <i class='fas fa-bezier-curve'></i>
+                    <h5>Hosting Maintenance</h5>
+                    <p>
+                        La realizzazione di un sito coinvolge diverse
+                        figure professionali che variano in base alla
+                        complessità del progetto: l'analista che raccoglie le
+                        richieste del cliente.
+                     </p>
+            </div>
+            <div class="col-md-4">
+                    <i class='fas fa-bezier-curve'></i>
+                    <h5>Hosting Maintenance</h5>
+                    <p>
+                        La realizzazione di un sito coinvolge diverse
+                        figure professionali che variano in base alla
+                        complessità del progetto: l'analista che raccoglie le
+                        richieste del cliente.
+                     </p>
+            </div>
+            <div class="col-md-4">
+                    <i class='fas fa-bezier-curve'></i>
+                    <h5>Hosting Maintenance</h5>
+                    <p>
+                        La realizzazione di un sito coinvolge diverse
+                        figure professionali che variano in base alla
+                        complessità del progetto: l'analista che raccoglie le
+                        richieste del cliente.
+                     </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<br><br><br><hr><br><br>
+
+
+<section class="sezione_competenze">
+    <div class="security" style="background-image:url({% static 'images/security.jpg'%});">
+
+    </div>
+
+    <br><br><br>
+    <!-- Webdevelopment process -->
+    <section class="page-section" id="webprocess">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase">Our web development process</h2>
+                    <h4 class="section-subheading text-muted"> Creazione di app e siti web a 360 gradi.</h4>
+                </div>
+            </div>
+      <br><br>
+            <div class="row">
+                <div class="col-lg-12">
+                	<ul class="timeline">
+            			<li>
+							<div class="timeline-image">
+                				<img class="rounded-circle img-fluid" src="{% static 'images/image_web_process/information.jpg' %}" alt="">
+             	 			</div>
+              				<div class="timeline-panel">
+                				<div class="timeline-heading">
+                  					<h4>STEP 1.</h4>
+                  					<h5 class="subheading">Gathering information and target</h5>
+                				</div>
+                				<div class="timeline-body">
+                  					<p class="text-muted">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+										Sunt ut voluptatum eius sapiente, totam reiciendis temporibus
+										qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+									</p>
+                				</div>
+              				</div>
+            			</li>
+            			<li class="timeline-inverted">
+              				<div class="timeline-image">
+                				<img class="rounded-circle img-fluid" src="{% static 'images/design.jpg' %}" alt="">
+             				</div>
+              				<div class="timeline-panel">
+                				<div class="timeline-heading">
+                  					<h4>STEP 2.</h4>
+                  					<h5 class="subheading">An Agency is Born</h5>
+                				</div>
+                				<div class="timeline-body">
+                  					<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+										Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam,
+									  	recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+									</p>
+                				</div>
+              				</div>
+            			</li>
+            			<li>
+              				<div class="timeline-image">
+                				<img class="rounded-circle img-fluid" src="{% static 'images/design.jpg' %}" alt="">
+              				</div>
+              				<div class="timeline-panel">
+                				<div class="timeline-heading">
+                 					<h4>STEP 3.</h4>
+                  					<h5 class="subheading">Transition to Full Service</h5>
+                				</div>
+                				<div class="timeline-body">
+                  					<p class="text-muted">Lorem ipsum dolor sit amet,
+										consectetur adipisicing elit. Sunt ut voluptatum eius sapiente,
+										totam reiciendis temporibus qui quibusdam, recusandae sit vero unde,
+										sed, incidunt et ea quo dolore laudantium consectetur!
+									 </p>
+                				</div>
+             		 		</div>
+            			</li>
+            			<li class="timeline-inverted">
+             				<div class="timeline-image">
+                				<img class="rounded-circle img-fluid" src="{% static 'images/team_di_lavoro.jpeg' %}" alt="">
+              				</div>
+              				<div class="timeline-panel">
+                				<div class="timeline-heading">
+                  					<h4>STEP 4.</h4>
+                  					<h5 class="subheading">Phase Two Expansion</h5>
+                				</div>
+                				<div class="timeline-body">
+                  					<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+										Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam,
+										recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+									</p>
+                				</div>
+              				</div>
+            			</li>
+            			<li class="timeline-inverted">
+              				<div class="timeline-image">
+                				<h4 class="text-light" style="font-family:Lato;">Be Part
+                  				<br>Of Our
+                  				<br>Story!</h4>
+              				</div>
+            			</li>
+          		</ul>
+        	</div>
+      	</div>
+    </div>
+  </section>
+
+    <br><br><br>
+    <div class="security" style="background-image:url({% static 'images/design.jpg'%});">
+
+    </div>
+</section>
+
+
+<br><br><br><br>
+
+
+
+
+
+
+
+
+{% endblock %}
